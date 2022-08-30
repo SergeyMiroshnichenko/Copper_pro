@@ -1,0 +1,20 @@
+@import url(header.css);
+@import url(main.css);
+@import url(footer.css);
+@font-face {
+    font-family: 'Mont';
+    src: url(/fons/MontSemiBold.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family:"Lighthaus";
+    src: url(/fons/lighthaus.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family:'MontLite';
+    src: url(/fons/MontLight.ttf);
+    font-weight: 400;
+}
