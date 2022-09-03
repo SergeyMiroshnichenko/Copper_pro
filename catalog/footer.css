@@ -1,0 +1,63 @@
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: url(/img/Rectangle9.png);
+}
+footer .container {
+  width: 74%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 80px;
+  align-items: flex-start;
+}
+footer .container .confidentiality {
+  width: 40%;
+}
+footer .container .confidentiality .law {
+  color: white;
+  font-family: "MontLite";
+  font-size: 14px;
+  font-weight: 400;
+}
+
+ul {
+  padding: 0px;
+  color: white;
+  color: white;
+  font-family: "MontLite";
+  font-size: 14px;
+  font-weight: bold;
+}
+ul li {
+  list-style-type: none;
+  height: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: "MontLite";
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+}
+a:hover {
+  border-bottom: 1px solid white;
+}
+
+.social {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.social img {
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+.social img:hover {
+  border-bottom: 1px solid white;
+}/*# sourceMappingURL=footer.css.map */

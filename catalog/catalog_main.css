@@ -1,0 +1,135 @@
+main {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.section_type_product {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.section_type_product .container {
+  width: 74%;
+}
+.section_type_product .container .catalog_pr {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+}
+.section_type_product .container .catalog_pr .wrapper {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section_type_product .container .catalog_pr .wrapper .product_catalog {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.section_type_product .container .catalog_pr .wrapper .product_catalog img {
+  width: 100%;
+}
+.section_type_product .container .catalog_pr .wrapper .product_catalog .name_product {
+  text-align: center;
+  position: absolute;
+  bottom: 15px;
+  color: white;
+  font-family: "Mont";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 96.4%;
+  align-items: center;
+  text-align: center;
+}
+
+.section_new {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section_new .container {
+  width: 74%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box_product {
+  width: 100%;
+  display: flex;
+  min-width: 0;
+  flex-wrap: wrap;
+}
+
+.wrapper {
+  width: 33.3%;
+  display: flex;
+  justify-content: center;
+}
+.wrapper .card {
+  position: relative;
+  width: 91%;
+  cursor: pointer;
+}
+.wrapper .card .sale {
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  width: 84px;
+  height: 36px;
+  background-color: #9B0000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.wrapper .card img {
+  width: 100%;
+}
+.wrapper .card .price {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.wrapper .card .price h3 {
+  width: 60%;
+  margin-bottom: 0px;
+  font-family: "Mont";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 96.4%;
+}
+.wrapper .card .price .price_product {
+  display: flex;
+  width: 50%;
+  justify-content: end;
+  font-family: "Mont";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 96.4%;
+}
+
+.heard {
+  width: 50px;
+  height: 63px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}/*# sourceMappingURL=catalog_main.css.map */
