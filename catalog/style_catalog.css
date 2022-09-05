@@ -1,6 +1,6 @@
 @import url(/catalog/header.css);
 @import url(/catalog/catalog_main.css);
-@import url(/catalog/footer.css);
+@import url(/Index/footer.css);
 @font-face {
   font-family: "Mont";
   src: url(/fons/MontSemiBold.ttf);
@@ -15,4 +15,4 @@
   font-family: "MontLite";
   src: url(/fons/MontLight.ttf);
   font-weight: 400;
-} /*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style_catalog.css.map */
+}/*# sourceMappingURL=style_catalog.css.map */

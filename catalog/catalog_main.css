@@ -61,25 +61,24 @@ main {
   flex-direction: column;
   align-items: center;
 }
-
-.box_product {
+.section_new .container .box_product {
   width: 100%;
   display: flex;
   min-width: 0;
   flex-wrap: wrap;
 }
-
-.wrapper {
+.section_new .container .box_product .wrapper {
   width: 33.3%;
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
 }
-.wrapper .card {
+.section_new .container .box_product .wrapper .card {
   position: relative;
   width: 91%;
   cursor: pointer;
 }
-.wrapper .card .sale {
+.section_new .container .box_product .wrapper .card .sale {
   position: absolute;
   top: 20px;
   left: 0px;
@@ -92,16 +91,16 @@ main {
   align-items: center;
   cursor: pointer;
 }
-.wrapper .card img {
+.section_new .container .box_product .wrapper .card img {
   width: 100%;
 }
-.wrapper .card .price {
+.section_new .container .box_product .wrapper .card .price {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
-.wrapper .card .price h3 {
+.section_new .container .box_product .wrapper .card .price h3 {
   width: 60%;
   margin-bottom: 0px;
   font-family: "Mont";
@@ -110,7 +109,7 @@ main {
   font-size: 20px;
   line-height: 96.4%;
 }
-.wrapper .card .price .price_product {
+.section_new .container .box_product .wrapper .card .price .price_product {
   display: flex;
   width: 50%;
   justify-content: end;
