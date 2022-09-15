@@ -1,8 +1,10 @@
 footer {
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
-  background: url(/img/Rectangle9.png);
+  background: rgb(203, 141, 98);
+  background: linear-gradient(90deg, rgb(203, 141, 98) 0%, rgb(11, 63, 55) 27%);
 }
 footer .container {
   width: 74%;
@@ -11,20 +13,156 @@ footer .container {
   justify-content: space-between;
   padding-top: 80px;
   align-items: flex-start;
+  flex-wrap: wrap;
+}
+@media (max-width: 482px) {
+  footer .container {
+    justify-content: center;
+    padding-top: 20px;
+  }
+}
+@media (max-width: 1042px) {
+  footer .container .navigation {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 1042px) and (max-width: 482px) {
+  footer .container .navigation {
+    width: 80%;
+  }
+}
+@media (max-width: 1042px) {
+  footer .container .navigation ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 1042px) {
+  footer .container .catalog {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 1042px) and (max-width: 482px) {
+  footer .container .catalog {
+    width: 80%;
+  }
+}
+@media (max-width: 1042px) {
+  footer .container .catalog ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 1042px) {
+  footer .container .contact {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 1042px) and (max-width: 482px) {
+  footer .container .contact {
+    width: 80%;
+  }
+}
+@media (max-width: 1042px) {
+  footer .container .contact ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .container .contact ul li {
+    text-align: center;
+    margin-bottom: 10px;
+  }
 }
 footer .container .confidentiality {
   width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 1178px) {
+  footer .container .confidentiality {
+    width: 30%;
+  }
+}
+@media (max-width: 1042px) {
+  footer .container .confidentiality {
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+}
+@media (max-width: 482px) {
+  footer .container .confidentiality {
+    width: 80%;
+  }
+}
+footer .container .confidentiality .logo_footer {
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+@media (max-width: 1178px) {
+  footer .container .confidentiality .logo_footer {
+    text-align: center;
+  }
+}
+@media (max-width: 482px) {
+  footer .container .confidentiality .logo_footer {
+    width: 80%;
+  }
+}
+footer .container .confidentiality .logo_footer img {
+  margin-bottom: 20px;
 }
 footer .container .confidentiality .law {
   color: white;
-  font-family: "MontLite";
+  font-family: "Mont";
   font-size: 14px;
   font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 20px;
+}
+@media (max-width: 1178px) {
+  footer .container .confidentiality .law {
+    text-align: center;
+  }
+}
+footer .container .confidentiality a {
+  font-family: "Mont";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+}
+@media (max-width: 1178px) {
+  footer .container .confidentiality a {
+    text-align: center;
+  }
 }
 
 ul {
   padding: 0px;
-  color: white;
   color: white;
   font-family: "MontLite";
   font-size: 14px;
@@ -33,12 +171,18 @@ ul {
 ul li {
   list-style-type: none;
   height: 30px;
+  font-family: "Mont";
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
 a {
   text-decoration: none;
   color: white;
-  font-family: "MontLite";
+  font-family: "Mont";
   font-size: 14px;
   font-weight: 400;
   cursor: pointer;
@@ -60,4 +204,26 @@ a:hover {
 }
 .social img:hover {
   border-bottom: 1px solid white;
+}
+
+.btn_up {
+  position: absolute;
+  width: 50px;
+  height: 90px;
+  bottom: 0;
+  right: 50px;
+  background: linear-gradient(180deg, #5E3928, #CB8D62);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn_up a {
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+  font-family: "Mont";
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
 }/*# sourceMappingURL=footer.css.map */

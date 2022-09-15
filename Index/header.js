@@ -16,5 +16,18 @@ document.addEventListener("scroll", function(){
 
 });
 
+window.addEventListener("scroll", function(){
+    if($(document).scrollTop() > scroll_distance ) {
+        if(transparent) {
+            transparent = false;
+            $('header').removeClass('changeColor');
+        }
+     } else {
+        if( !transparent ) {
+            transparent = true;
+            $('header').addClass('changeColor');
+        }
+      }
+  });
 
 

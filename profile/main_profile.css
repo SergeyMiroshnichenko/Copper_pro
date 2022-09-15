@@ -1,0 +1,569 @@
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main html {
+  scroll-behavior: smooth;
+}
+main .container {
+  width: 74%;
+}
+main .container .wrapper_profile {
+  width: 100%;
+  display: flex;
+}
+@media (max-width: 700px) {
+  main .container .wrapper_profile {
+    flex-direction: column;
+  }
+}
+@media (max-width: 600px) {
+  main .container .wrapper_profile {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+main .container h2 {
+  font-family: "Lighthaus";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 74.9%;
+  width: 100%;
+}
+@media (max-width: 1350px) {
+  main .container h2 {
+    width: 100%;
+    font-size: 35px;
+  }
+}
+@media (max-width: 960px) {
+  main .container h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 460px) {
+  main .container h2 {
+    font-size: 25px;
+  }
+}
+main .container .profile_btn {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 700px) {
+  main .container .profile_btn {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+main .container .profile_btn .profile {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 70%;
+  border: none;
+  background: linear-gradient(270deg, #0B3F37, #CB8D62);
+  padding: 10px 0px;
+  margin-bottom: 15px;
+  color: white;
+  cursor: pointer;
+  font-family: "Mont";
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+  transition: 0.2s;
+}
+main .container .profile_btn .profile:hover {
+  background: linear-gradient(270deg, #5E3928, #CB8D62);
+}
+main .container .profile_btn .profile img {
+  padding: 0px 10px;
+}
+@media (max-width: 1000px) {
+  main .container .profile_btn .profile {
+    font-size: 15px;
+  }
+}
+@media (max-width: 850px) {
+  main .container .profile_btn .profile {
+    width: 80%;
+    font-size: 14px;
+  }
+}
+@media (max-width: 700px) {
+  main .container .profile_btn .profile {
+    width: 45%;
+    margin: 10px;
+  }
+}
+@media (max-width: 600px) {
+  main .container .profile_btn .profile {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+main .container .profile_btn .exit {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 80%;
+  padding: 10px 0px;
+  border: none;
+  color: black;
+  margin-bottom: 15px;
+  background: transparent;
+  cursor: pointer;
+  font-family: "Mont";
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+  transition: 0.2s;
+  border: 1px solid transparent;
+}
+main .container .profile_btn .exit:hover {
+  border: 1px solid #0B3F37;
+}
+main .container .profile_btn .exit img {
+  padding: 0px 10px;
+}
+@media (max-width: 700px) {
+  main .container .profile_btn .exit {
+    width: 45%;
+    margin: 10px;
+  }
+}
+@media (max-width: 600px) {
+  main .container .profile_btn .exit {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+main .container .foto_user {
+  display: flex;
+  margin-bottom: 20px;
+}
+main .container .foto_user .foto {
+  padding-right: 20px;
+}
+main .container .foto_user .foto img {
+  border-radius: 50%;
+}
+main .container .foto_user .user_name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+main .container .foto_user .user_name h4 {
+  font-family: "Mont";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 10px;
+}
+@media (max-width: 980px) {
+  main .container .foto_user .user_name h4 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 660px) {
+  main .container .foto_user .user_name h4 {
+    font-size: 16px;
+  }
+}
+main .container .foto_user .user_name .name {
+  font-family: "Mont";
+  font-size: 27px;
+  font-weight: 900;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 10px;
+}
+@media (max-width: 980px) {
+  main .container .foto_user .user_name .name {
+    font-size: 21px;
+  }
+}
+@media (max-width: 660px) {
+  main .container .foto_user .user_name .name {
+    font-size: 18px;
+  }
+}
+main .container .foto_user .user_name .loading {
+  background-color: transparent;
+  border: none;
+  font-family: "Mont";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 13px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+main .container .foto_user .user_name .loading span {
+  font-family: "Mont";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 13px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #A1A1A1;
+}
+main .container .foto_user .user_name .loading img {
+  padding-right: 5px;
+}
+
+h3 {
+  font-family: "Mont";
+  font-size: 27px;
+  font-weight: 900;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.contact_information {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 60%;
+}
+@media (max-width: 700px) {
+  .contact_information {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .contact_information {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.contact_information .form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (max-width: 980px) {
+  .contact_information .form {
+    margin-bottom: 40px;
+  }
+}
+.contact_information .form form {
+  width: 45%;
+  height: 20%;
+  margin-bottom: 10px;
+  border: none;
+}
+@media (max-width: 980px) {
+  .contact_information .form form {
+    width: 100%;
+  }
+}
+.contact_information .form form input {
+  text-align: start;
+  width: 90%;
+  height: 40px;
+  padding-left: 20px;
+  font-family: "Mont";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+}
+
+.password {
+  width: 100%;
+}
+.password .wrapper_password {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+.password .wrapper_password form {
+  width: 45%;
+  height: 20%;
+  margin-bottom: 10px;
+  border: none;
+}
+@media (max-width: 980px) {
+  .password .wrapper_password form {
+    width: 100%;
+  }
+}
+.password .wrapper_password form input {
+  text-align: start;
+  width: 90%;
+  height: 40px;
+  padding-left: 20px;
+  font-family: "Mont";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+}
+.password .wrapper_password .change {
+  width: 45%;
+  height: 46px;
+  margin-bottom: 30px;
+  color: white;
+  font-family: "Mont";
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+  background: linear-gradient(270deg, #0B3F37, #CB8D62);
+}
+.password .wrapper_password .change:hover {
+  background: linear-gradient(270deg, #CB8D62, #0B3F37);
+}
+@media (max-width: 980px) {
+  .password .wrapper_password .change {
+    width: 97%;
+  }
+}
+@media (max-width: 700px) {
+  .password .wrapper_password .change {
+    width: 95%;
+  }
+}
+@media (max-width: 600px) {
+  .password .wrapper_password .change {
+    width: 96%;
+  }
+}
+@media (max-width: 500px) {
+  .password .wrapper_password .change {
+    width: 97%;
+  }
+}
+@media (max-width: 440px) {
+  .password .wrapper_password .change {
+    width: 98%;
+  }
+}
+
+.bank {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.bank .wrapper_form {
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+@media (max-width: 600px) {
+  .bank .wrapper_form {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.bank .num_card {
+  position: relative;
+  width: 45%;
+  height: 20%;
+  margin-bottom: 10px;
+  border: none;
+}
+@media (max-width: 1390px) {
+  .bank .num_card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .bank .num_card {
+    margin-left: 10px;
+  }
+}
+.bank .num_card .submit {
+  position: absolute;
+  right: 20px;
+  border: none;
+  background-color: transparent;
+  top: 15px;
+}
+.bank .num_card input {
+  text-align: start;
+  width: 90%;
+  height: 40px;
+  padding-left: 20px;
+  font-family: "Mont";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+}
+@media (max-width: 960px) {
+  .bank .num_card input {
+    width: 90%;
+    margin-left: 0px;
+  }
+}
+@media (max-width: 887px) {
+  .bank .num_card input {
+    width: 89%;
+    margin-left: 0px;
+  }
+}
+@media (max-width: 740px) {
+  .bank .num_card input {
+    width: 88%;
+    margin-left: 0px;
+  }
+}
+@media (max-width: 700px) {
+  .bank .num_card input {
+    width: 92%;
+  }
+}
+@media (max-width: 600px) {
+  .bank .num_card input {
+    width: 91%;
+  }
+}
+@media (max-width: 560px) {
+  .bank .num_card input {
+    width: 90%;
+  }
+}
+@media (max-width: 460px) {
+  .bank .num_card input {
+    width: 89%;
+  }
+}
+@media (max-width: 400px) {
+  .bank .num_card input {
+    width: 88%;
+  }
+}
+.bank .date {
+  position: relative;
+  width: 18%;
+  height: 45px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 10px;
+}
+@media (max-width: 1390px) {
+  .bank .date {
+    width: 97%;
+    margin-left: 0px;
+    margin-bottom: 15px;
+  }
+}
+.bank .date .oll {
+  width: 24%;
+  height: 89%;
+  font-family: "Mont";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  padding-left: 80px;
+}
+@media (max-width: 1390px) {
+  .bank .date .oll {
+    width: 90%;
+    margin-left: 0px;
+  }
+}
+.bank .date .all_date {
+  position: absolute;
+  left: 5px;
+  top: 11px;
+  font-family: "Mont";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #A1A1A1;
+}
+
+.cvv {
+  position: relative;
+  width: 18%;
+  height: 45px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 1390px) {
+  .cvv {
+    width: 97%;
+    margin-left: 0px;
+  }
+}
+.cvv .oll {
+  width: 23%;
+  height: 89%;
+  font-family: "Mont";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  padding-left: 80px;
+}
+@media (max-width: 1390px) {
+  .cvv .oll {
+    width: 90%;
+    margin-left: 0px;
+  }
+}
+.cvv .all_date {
+  position: absolute;
+  left: 5px;
+  top: 11px;
+  font-family: "Mont";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #A1A1A1;
+}
+
+.save {
+  width: 48%;
+  height: 46px;
+  margin-bottom: 30px;
+  color: white;
+  font-family: "Mont";
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+  background: linear-gradient(270deg, #5E3928, #CB8D62);
+  cursor: pointer;
+}
+.save:hover {
+  background: linear-gradient(270deg, #CB8D62, #5E3928);
+}
+@media (max-width: 980px) {
+  .save {
+    width: 97%;
+  }
+}/*# sourceMappingURL=main_profile.css.map */

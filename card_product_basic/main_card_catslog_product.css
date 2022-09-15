@@ -1,0 +1,489 @@
+.card_product_basic {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.card_product_basic .container {
+  width: 74%;
+}
+
+h2 {
+  font-family: "Lighthaus";
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 37px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.section_central {
+  display: flex;
+}
+.section_central .wrapper_slider {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section_central .central_img {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section_central .central_img img {
+  width: 100%;
+}
+.section_central .product_description {
+  width: 60%;
+  padding-left: 20px;
+}
+.section_central .product_description h2 {
+  text-align: start;
+  line-height: 42px;
+}
+.section_central .product_description .information {
+  display: flex;
+  justify-content: space-between;
+}
+.section_central .product_description .information .availability {
+  font-family: "Mont";
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #4B7159;
+}
+.section_central .product_description .information .articul {
+  font-family: "Mont";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.section_central .product_description .information .articul span {
+  font-family: "Mont";
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.section_central .product_description .about_product .txt {
+  font-family: "Mont";
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.section_central .product_description .about_product .description_product {
+  font-family: "Mont";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.section_central .by {
+  display: flex;
+  justify-content: space-between;
+}
+.section_central .by .amout {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  height: 50px;
+  align-items: center;
+}
+.section_central .by .amout button {
+  background: white;
+  height: 100%;
+  width: 15%;
+  font-family: "Mont";
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.section_central .by .amout .num {
+  width: 30%;
+  height: 100%;
+}
+.section_central .by .amout .num input {
+  width: 100%;
+  height: 91%;
+  border: 1px solid #E6E8E7;
+}
+.section_central .by .amout .plus {
+  border: 1px solid #E6E8E7;
+}
+.section_central .by .amout .minus {
+  border: 1px solid #E6E8E7;
+}
+.section_central .by .btn_by {
+  width: 47%;
+  padding: 10px 27px;
+  background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+  color: white;
+  font-family: "Mont";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 96.4%;
+  cursor: pointer;
+}
+.section_central .price_product {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 20px;
+}
+.section_central .price_product .price {
+  font-family: "Mont";
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.section_central .wrapper_price {
+  display: flex;
+  align-items: center;
+}
+.section_central .wrapper_price .actual_price {
+  font-family: "Mont";
+  font-size: 45px;
+  font-weight: 800;
+  line-height: 43px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #9B0000;
+  padding-right: 20px;
+}
+.section_central .wrapper_price .sale {
+  font-family: "Mont";
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #031412;
+  margin: 0, auto;
+}
+
+.wrapper_social {
+  display: flex;
+  align-items: center;
+}
+.wrapper_social .subscribe {
+  padding-right: 30px;
+  font-family: "Mont";
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.wrapper_social .social {
+  display: flex;
+  align-items: center;
+}
+.wrapper_social .social ul {
+  display: flex;
+  align-items: center;
+}
+.wrapper_social .social ul li {
+  padding-left: 15px;
+  display: flex;
+  justify-content: center;
+}
+.wrapper_social .social ul li a {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+.wrapper_social .social ul li a:hover {
+  border-bottom: 2px solid #4B7159;
+}
+.wrapper_social .social ul li a img {
+  padding: 0;
+}
+
+.section_product_about h3 {
+  font-family: "Lighthaus";
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.section_product_about .text_about_product {
+  font-family: "Mont";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.section_review {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.section_review .container {
+  width: 100%;
+  flex-direction: column;
+}
+.section_review .box_product {
+  width: 100%;
+  display: flex;
+}
+.section_review .box_product .wrapper {
+  width: 33.3%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.section_review .box_product .wrapper .card {
+  width: 95%;
+  box-shadow: 0px 0px 20px 1px grey;
+  border-radius: 10px;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.section_review .box_product .wrapper .card .person {
+  width: 15%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.section_review .box_product .wrapper .card .name_person {
+  margin-bottom: 20px;
+  padding-left: 5px;
+}
+.section_review .box_product .wrapper .card .review {
+  margin-bottom: 20px;
+  text-align: start;
+  padding-left: 5px;
+}
+.section_review .box_product .wrapper .card .date {
+  margin-bottom: 20px;
+}
+
+.section_interesting {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+  padding-top: 60px;
+}
+.section_interesting .container {
+  width: 100%;
+  flex-direction: column;
+}
+.section_interesting .container .box_product {
+  width: 100%;
+  display: flex;
+}
+
+.wrapper {
+  width: 33.3%;
+  display: flex;
+  justify-content: center;
+}
+.wrapper .card {
+  position: relative;
+  width: 91%;
+  cursor: pointer;
+}
+.wrapper .card .sale {
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  width: 84px;
+  height: 36px;
+  background-color: #9B0000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.wrapper .card img {
+  width: 100%;
+}
+.wrapper .card .price {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.wrapper .card .price h3 {
+  width: 60%;
+  margin-bottom: 0px;
+  font-family: "Mont";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 96.4%;
+}
+.wrapper .card .price .price_product {
+  display: flex;
+  width: 50%;
+  justify-content: end;
+  font-family: "Mont";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 96.4%;
+}
+
+.heard {
+  width: 50px;
+  height: 63px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.wrapper {
+  width: 33.3%;
+  display: flex;
+  justify-content: center;
+}
+.wrapper .card {
+  position: relative;
+  width: 91%;
+  cursor: pointer;
+}
+.wrapper .card .sale {
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  width: 84px;
+  height: 36px;
+  background-color: #9B0000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.wrapper .card img {
+  width: 100%;
+}
+.wrapper .card .price {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.wrapper .card .price h3 {
+  width: 60%;
+  margin-bottom: 0px;
+  font-family: "Mont";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 96.4%;
+}
+.wrapper .card .price .price_product {
+  display: flex;
+  width: 50%;
+  justify-content: end;
+  font-family: "Mont";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 96.4%;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-arrow {
+  top: 50%;
+  z-index: 2000;
+  font-size: 0;
+  width: 58px;
+  height: 28px;
+  border: none;
+}
+
+.slick-slider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.slick-slider .slick-prev {
+  position: absolute;
+  left: -10%;
+  background: url(/img/prev.svg) no-repeat;
+  padding: 0px;
+  display: flex;
+}
+.slick-slider .slick-next {
+  position: absolute;
+  right: -10%;
+  background: url(/img/next.svg) no-repeat 100%;
+}
+
+.button_page .home {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "Mont";
+  font-weight: 600;
+  color: black;
+}
+.button_page .catalog_btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "Mont";
+  font-weight: 800;
+  color: black;
+}
+
+.slick-dots {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: -80px;
+}
+.slick-dots button {
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  background: #031412;
+  margin: 12px;
+  border: none;
+}
+.slick-dots .slick-active button {
+  background: linear-gradient(#5E3928, #E4A16F);
+}/*# sourceMappingURL=main_card_catslog_product.css.map */
