@@ -1,0 +1,163 @@
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    .section_news {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-top: 40px;
+
+        .container {
+            width: 74%;
+            padding: 30px 0px 20px 0px;
+            display: flex;
+            align-items: flex-start;
+    
+            
+            @media(max-width:1024px) {
+                padding-top: 60px;
+              }
+            @media(max-width:500px) {
+              width: 90%;
+            }
+    
+            h2 {
+            
+                @media(max-width:1350px) {
+                    width: 100%;
+                    font-size: 35px;
+                }
+            
+                @media(max-width:960px) {
+                    font-size: 30px;
+                }
+            
+                @media(max-width:460px) {
+                    font-size: 25px;
+                    margin-bottom: 5px; 
+                }
+            }
+            
+            .button_page {
+    
+                display: flex;
+                align-items: center;
+    
+                .home {
+                    border: none;
+                    background-color: transparent;
+                    cursor: pointer;
+                    font-size: 18px;
+                    font-family: "Mont";
+                    font-weight: 600;
+                    color: black;
+    
+                    @media(max-width:960px) {
+                        font-size: 16px;
+                    
+                    }
+                }
+    
+                .catalog_btn {
+                    border: none;
+                    background-color: transparent;
+                    cursor: pointer;
+                    font-size: 18px;
+                    font-family: "Mont";
+                    font-weight: 800;
+                    color:black;
+    
+                    @media(max-width:960px) {
+                        font-size: 16px;
+                    
+                    }
+                }
+            }
+        }
+    }
+
+    .news_box {
+        display: flex;
+        flex-wrap: wrap;
+
+        .news_wrapper {
+            width: 50%;
+            
+            @media (max-width:600px) {
+                width: 100%;
+            }
+
+            .news {
+                margin: 10px;
+
+                .text_news {
+                    font-family: 'Mont';
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 19px;
+                    letter-spacing: 0em;
+                    text-align: left;  
+                    margin-bottom: 10px;                 
+                }
+               
+                .img_news {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 15px;
+                    cursor: pointer;
+                    
+                    img {
+                        width: 100%;
+                    }
+                    .title_news {
+                        position: absolute;
+                        bottom:10px;
+                        color: white;
+                        font-size: 20px;
+                        font-family: "Mont";
+                        text-align: center;
+                    }
+
+                    .date {
+                        font-weight: 18px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        width: 89px;
+                        height: 31px;
+                        color: white;
+                        background: linear-gradient(#5E3928 , #E4A16F);
+                    }
+                }
+
+                .read_news {
+                    border: none;
+                    background: transparent;
+                    font-family: "Mont";
+                    font-weight: 800;
+                    margin-bottom: 15px;
+                    padding:0px;
+                    color: transparent;
+                    background-clip: text;
+                    background-image: linear-gradient(90deg,#5E3928,#E4A16F); 
+                    border: 2px solid transparent;
+                    transition: 0.3s;
+  
+                      &:hover {
+                          border-bottom: 2px solid #5E3928;
+                      }               
+                }
+            }
+        }
+    }
+
+   
+}

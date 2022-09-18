@@ -1,0 +1,597 @@
+.card_product_basic {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-top: 70px;
+
+   @media(max-width:1024px) {
+       padding-top: 100px;   
+   } 
+
+    .container {
+        width: 74%;
+        display: flex;
+        justify-content:center;
+        align-items: start;
+        flex-direction: column;
+    }
+}
+
+h2 {
+    font-family: "Lighthaus";
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+.section_central {
+    display: flex;
+
+    .wrapper_slider {
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .central_img {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .product_description {
+        width: 60%;
+        padding-left: 20px;
+
+    h2 {
+        text-align: start;
+        line-height: 42px;
+    }
+
+        .information {
+            display: flex;
+            justify-content: space-between;
+
+            .availability {
+                font-family: "Mont";
+                font-size: 16px;
+                font-weight: 800;
+                line-height: 21px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #4B7159;
+            }
+
+            .articul {
+                font-family: "Mont";
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 21px;
+                letter-spacing: 0em;
+                text-align: left;
+
+                span {
+                    font-family: "Mont";
+                    font-size: 16px;
+                    font-weight: 800;
+                    line-height: 21px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                }
+            }
+        }
+
+        .about_product {
+
+            .txt {
+                font-family: "Mont";
+                font-size: 16px;
+                font-weight: 800;
+                line-height: 21px;
+                letter-spacing: 0em;
+                text-align: left;
+            }
+
+            .description_product {
+                font-family: "Mont";
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 21px;
+                letter-spacing: 0em;
+                text-align: left;
+            }
+        }
+    }
+
+    .by {
+        display: flex;
+        justify-content: space-between;
+
+        .amout {
+            display: flex;
+            align-items: center;
+            width: 40%;
+            height: 50px;
+            align-items: center;
+
+            button {
+                background: white;
+                height: 100%;
+                width: 15%;
+                font-family: "Mont";
+                font-size: 20px;
+                font-weight: 800;
+                line-height: 26px;
+                letter-spacing: 0em;
+                text-align: center;
+
+            }
+
+            .num {
+                width: 30%;
+                height: 100%;
+                
+                input {
+                    width: 100%;
+                    height: 91%;
+                    border: 1px solid #E6E8E7;
+                }
+            }
+
+            .plus {
+                border: 1px solid #E6E8E7;
+            }
+
+            .minus {
+                border: 1px solid #E6E8E7; 
+            }
+        }
+
+        .btn_by {
+            width: 47%;
+            padding: 10px 27px;
+            background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+            color: white;
+            font-family: 'Mont';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 96.4%;
+            cursor: pointer;
+        }
+    }
+
+    .price_product {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        margin-bottom: 20px;
+    
+        .price {
+            font-family: 'Mont';
+            font-size: 35px;
+            font-weight: 600;
+            line-height: 34px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+    }
+    
+    .wrapper_price {
+        display: flex;
+        align-items:center;
+    
+        .actual_price {
+            font-family: "Mont";
+            font-size: 45px;
+            font-weight: 800;
+            line-height: 43px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #9B0000;
+            padding-right: 20px;
+        }
+    
+        .sale {
+            font-family: "Mont";
+            font-size: 25px;
+            font-weight: 600;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+            color:#031412;
+            margin: 0,auto;
+        }
+    }
+}
+
+.wrapper_social{
+    display: flex;
+    align-items: center;
+
+    .subscribe {
+        padding-right: 30px;
+        font-family: "Mont";
+        font-size: 16px;
+        font-weight: 800;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .social {
+        display: flex;
+        align-items: center;
+
+        ul {
+            display: flex;
+            align-items: center;
+
+            li {
+                padding-left: 15px;
+                display: flex;
+                justify-content: center;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    border-bottom: 2px solid transparent;
+
+                    &:hover {
+                        border-bottom: 2px solid #4B7159;
+                    }
+                    img {
+                        padding: 0;
+                    }   
+                }
+            }
+        }
+    }
+}
+
+.section_product_about {
+
+    h3 {
+        font-family: "Lighthaus";
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 42px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+
+    .text_about_product {
+        font-family: 'Mont';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+}
+
+.section_review {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+
+    .container {
+        width:100%;
+        flex-direction: column;
+    }
+
+    .box_product {
+        width: 100%;
+        display: flex;
+            
+        .wrapper {
+            width:33.3%;
+            display: flex;
+            justify-content: center;
+           
+
+            @media(max-width:930px) {
+               width: 50%;
+            }        
+
+            .card {
+                width: 95%;
+                box-shadow: 0px 0px 20px 1px grey;
+                border-radius: 10px;
+                display: flex;
+                justify-content: start;
+                flex-direction: column;
+                align-items: flex-start;
+
+                .person {
+                    width: 15%;
+                    margin-bottom: 10px;
+                    padding: 10px;   
+                }
+
+                .name_person {
+                    margin-bottom: 20px;
+                    padding-left: 5px;
+                }
+
+                .review {
+                    margin-bottom: 20px;
+                    text-align: start;
+                    padding-left: 5px;
+                }
+
+                .date {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+.section_interesting {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+    padding-top: 60px;
+
+    .container {
+        width: 100%;
+        flex-direction: column;
+       
+        .box_product {
+            width: 100%;
+            display: flex;            
+        }
+    }
+}
+
+.wrapper {
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
+
+    .card {
+        position: relative;
+         width:91%;
+         cursor: pointer;
+
+         .sale {
+            position: absolute;
+            top: 20px;
+            left: 0px;
+            width: 84px;
+            height: 36px;
+            background-color: #9B0000;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+         
+        img {
+            width: 100%;
+        }
+
+        .price {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            
+            h3 {
+                width: 60%;
+                margin-bottom: 0px;
+                font-family: 'Mont';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 96.4%;
+            }
+
+            .price_product {
+                display: flex;
+                width: 50%;
+                justify-content: end;
+                font-family: 'Mont';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 30px;
+                line-height: 96.4%;
+            }
+        }
+    }
+}
+
+.heard {
+    width: 50px;
+    height: 63px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.wrapper {
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
+
+    .card {
+        position: relative;
+         width:91%;
+         cursor: pointer;
+
+         .sale {
+            position: absolute;
+            top: 20px;
+            left: 0px;
+            width: 84px;
+            height: 36px;
+            background-color: #9B0000;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+         
+        img {
+            width: 100%;
+        }
+
+        .price {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            
+            h3 {
+                width: 60%;
+                margin-bottom: 0px;
+                font-family: 'Mont';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 96.4%; 
+
+                @media(max-width:950px) {
+                    font-size: 16px;
+                }
+
+                @media(max-width:930px) {
+                    font-size: 14px;
+                }        
+        
+            }
+
+            .price_product {
+                display: flex;
+                width: 50%;
+                justify-content: end;
+                font-family: 'Mont';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 30px;
+                line-height: 96.4%;
+
+                @media(max-width:950px) {
+                    font-size: 20px;
+                }
+
+                @media(max-width:930px) {
+                    font-size: 15px;
+                }        
+            }
+         }
+    }
+}
+
+.slick-track {
+    display: flex;  
+}
+
+.slick-list{
+    overflow: hidden; 
+}
+
+.slick-arrow {
+    top: 50%;
+    z-index: 2000;
+    font-size: 0;
+    width: 58px;
+    height: 28px;
+    border: none;  
+}
+
+.slick-slider{
+    position: relative;
+    display: flex;
+    justify-content: center;
+   
+    .slick-prev {
+        position: absolute;
+        left: -10%;
+        background: url(/img/prev.svg) no-repeat ;
+        padding: 0px;
+        display: flex;
+    }
+
+    .slick-next {
+        position: absolute;
+        right: -10%;
+        background: url(/img/next.svg)no-repeat 100%;
+    }
+}
+
+.button_page {
+          
+    .home {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        font-size: 18px;
+        font-family: "Mont";
+        font-weight: 600;
+        color: black;
+    }
+
+    .catalog_btn {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        font-size: 18px;
+        font-family: "Mont";
+        font-weight: 800;
+        color:black;
+    }
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    bottom: -80px;
+    
+    button {
+        font-size: 0;
+        width: 12px;
+        height: 12px;
+        background: #031412;
+        margin: 12px;
+        border: none;
+    }
+
+    .slick-active {
+        
+        button {
+            background:linear-gradient(#5E3928 ,#E4A16F);
+        }
+    }
+
+}
+
+

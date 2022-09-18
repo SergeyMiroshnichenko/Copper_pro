@@ -1,0 +1,440 @@
+.main_card_product{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #fffbfb;
+    flex-direction: row;
+    align-items: center;
+
+    .container {
+        padding-top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 74%;
+
+        @media(max-width:500px) {
+            padding-top: 100px;
+            width: 95%;
+        } 
+    }
+
+    h2 {
+        font-family: "Lighthaus";
+        font-size: 50px;
+        font-weight: 400;
+    
+        @media(max-width:1250px) {
+            width: 100%;
+            margin-top: 0px;
+            font-size: 35px;
+        }
+       
+        @media(max-width:960px) {
+            font-size: 30px;   
+        }
+    
+        @media(max-width:460px) {
+          font-size: 25px;
+          margin-bottom: 5px;   
+        }   
+    }  
+}
+
+.characteristics {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .name_tovar {
+        font-family: "MontLite";
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #A1A1A1;
+        display: flex;
+        align-items: center;
+    }
+
+    .summ {
+        font-family: "MontLite";
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #A1A1A1;
+        padding-right: 80px;
+        display: flex;
+        align-items: center;
+
+        @media(max-width:460px) {
+          padding-right: 40px;
+        }
+
+        @media(max-width:345px) {
+            padding-right: 0px;
+        }
+       }
+
+    .amount {
+        margin-left: 240px;
+        font-family: "Mont";
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #A1A1A1;
+
+        @media(max-width:1164px) {
+            padding-right: 20px;   
+        }
+
+        @media(max-width:700px) {
+            margin-left: 180px;   
+        }
+
+        @media(max-width:540px) {
+            margin-left: 150px;
+        }
+
+        @media(max-width:430px) {
+            margin-left: 90px;
+        }
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.wrapper_by_product {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .delete {
+        position: absolute;
+        top:0;
+        right: 0px;
+    }
+
+    .delete {
+        position: absolute;
+    }
+
+    .product_description {
+        font-family: 'Mont';
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        width: 50%;
+        margin-left: 0;
+        padding-left: 0;
+
+        @media(max-width:1164px) {
+            font-size: 14px;   
+        }
+
+        @media(max-width:430px) {
+            font-size: 12px;   
+        }
+
+        @media(max-width:430px) {
+            font-size: 10px;   
+        }
+    }
+
+    .product_img {
+        display: flex;
+        align-items: center;
+        width: 49%;
+
+        img {
+            margin-right: 10px;
+        }
+    }
+
+    .product_amount {
+        font-family: "Mont";
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+
+        @media(max-width:760px) {
+            font-size: 16px;
+        }
+
+        @media(max-width:430px) {
+            font-size: 14px;
+        }
+    }
+
+    .prodoct_sum {
+        font-family: "Mont";
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+        padding-right:80px;
+
+        @media(max-width:760px) {
+            font-size: 16px;
+            padding-right: 50px;      
+        }
+
+        @media(max-width:430px) {
+            font-size: 14px;   
+        }
+
+        @media(max-width:380px) {
+           padding-right: 30px;
+        }
+
+        @media(max-width:360px) {
+            padding-right: 10px;
+         }
+    }
+}
+
+.button_page {
+          
+    .home {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        font-size: 18px;
+        font-family: "Mont";
+        font-weight: 600;
+        color: black;
+    }
+
+    .catalog_btn {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        font-size: 18px;
+        font-family: "Mont";
+        font-weight: 800;
+        color:black;
+    }
+}
+
+.section_basket_product {
+    display: flex;
+    width: 100%;
+    justify-content:center;
+    align-items: center;
+
+    @media(max-width:1056px) {
+       flex-direction: column;   
+    }
+
+    .wrapper_characteristics {
+        width: 100%;
+
+        @media(max-width:1056px) {
+           width: 100%;
+        }
+
+         @media(max-width:570px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+          
+        .line_product {
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .back_to_by {
+            margin-top: 30px;
+            font-family: 'Mont';
+            font-size: 18px;
+            font-weight: 800;
+            line-height: 17px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: #A1A1A1;
+            background: white;
+            padding: 15px 20px;
+            cursor: pointer;
+            border: 3px solid #A1A1A1 ;
+            transition: 0.3s;
+
+            &:hover {
+                background:linear-gradient( #5E3928 , #E4A16F);
+                color: white;
+                border: 3px solid transparent;
+            }
+
+            @media(max-width:1200px) {
+                font-size: 16px;
+               
+            }
+
+        }
+        
+    }
+}
+
+.wrapper_oll_product {
+    position: relative;
+    width: 38%;
+    margin-left: 50px;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0px 0px 40px 0px #0000000D;
+    margin-bottom: 120px;
+
+
+    
+    @media(max-width:1164px) {
+       width: 45%;
+       margin-left: 20px;   
+    }
+
+    @media(max-width:1056px) {
+        width: 100%;   
+    }
+
+    @media(max-width:760px) {
+     
+    }
+
+
+    .line_oll_product {
+        width: 100%;
+        margin-bottom: 15px;
+
+        img {
+            width: 100%;
+
+            @media(max-width:760px) {
+               width: 80%;
+            }
+        }
+    }
+
+    .img_basket {
+        width: 35%;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        img {
+            width: 100%;
+
+            @media(max-width:1050px) {
+               width: 60%;
+             }
+        }
+    }
+
+    .box_oll_product {
+        width: 80%;
+
+        .delivery {
+            font-family:"MontLite";
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 19px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #A1A1A1;
+            margin-bottom: 15px;      
+        }
+    }
+
+    .oll_product {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: start;
+
+        .text_oll_sum {
+            margin-bottom: 60px;
+            height: 30%;
+            font-family: 'Mont';
+            font-size: 35px;
+            font-weight: 400;
+            line-height: 34px;
+            letter-spacing: 0em;
+            text-align: left;
+
+            @media(max-width:1360px) {
+                padding-top: 30px;   
+            }
+
+            @media(max-width:1024px) {
+                margin-bottom: 20px;
+             }
+
+             @media(max-width:620px) {
+                margin-bottom: 10px;
+             }
+
+            .oll_summ {
+                margin-top: 30px;
+                font-family: "Mont";
+                font-size: 40px;
+                font-weight: 800;
+                line-height: 39px;
+                letter-spacing: 0em;
+                text-align: left;
+            
+                @media(max-width:1164px) {
+                   font-size:30px;
+                
+                }
+
+            } 
+        }
+    }
+
+    .wrapper_button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+
+        .checkout {
+            width: 80%;
+            height: 50px;
+            border: none;
+            color: white;
+            font-family: "Mont";
+            font-weight: 600;
+            font-size: 18px;
+            font-weight: bold;
+            background:linear-gradient( #5E3928 , #E4A16F);
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:hover {
+                background:linear-gradient( 270deg, #5E3928 , #E4A16F);
+            }
+
+            @media(max-width:1200px) {
+                font-size: 16px;   
+            }    
+        }
+    }
+}
+
