@@ -38,8 +38,8 @@ tabsBtn.forEach(function(item){
 })
 
 
-var scroll_distance = 80;
-var transparent = true;
+const scroll_distance = 80;
+const transparent = true;
 
 document.addEventListener("scroll", function(){
    if($(document).scrollTop() < scroll_distance ) {

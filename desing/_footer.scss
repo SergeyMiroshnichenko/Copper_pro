@@ -105,6 +105,7 @@ footer {
             }
 
             .logo_footer {
+
                 cursor: pointer;
                 margin-bottom: 10px;
 
@@ -135,21 +136,7 @@ footer {
                 }    
             } 
 
-            a {
-                font-family: 'Mont';
-                font-size: 14px;
-                font-weight: 400;
-                line-height: 19px;
-                letter-spacing: 0em;
-                text-align: left;
-                color: white;
-                width: 33%;
-
-                @media(max-width:1042px) {
-                    width: 100%;
-                    text-align: center;
-                }
-            }
+          
         }
     }
 }
@@ -171,25 +158,30 @@ ul {
         letter-spacing: 0em;
         text-align: left;
         
-        a {
-            text-decoration: none;
-            color: white;
-            font-family: 'Mont';
-            font-size: 14px;
-            font-weight: 400;
-            cursor: pointer;
-            border-bottom: 1px solid transparent;
-            transition: 0.3s;
-        
-            &:hover {
-                border-bottom: 1px solid white;
-               
-            }
-        }
+       
     }
 }
 
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Mont';
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    transition: 0.3s;
 
+    &:hover {
+        border-bottom: 1px solid white;
+       
+    }
+
+    @media(max-width:1042px) {
+        width: 100%;
+        text-align: center;
+    }
+}
 
 .social {
     width: 50%;

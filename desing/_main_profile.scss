@@ -6,6 +6,7 @@ main {
     html {
         scroll-behavior: smooth;
     } 
+
     .section_profile {
         display: flex;
         justify-content: center;
@@ -27,7 +28,6 @@ main {
                width: 85%;  
                 }
 
-
             .wrapper_profile {
                 width: 100%;
                 display: flex; 
@@ -42,9 +42,7 @@ main {
                     justify-content: center;
                 } 
             }
-            
-            
-            
+                        
             h2 {
                 font-family: 'Lighthaus';
                 font-style: normal;
@@ -69,7 +67,7 @@ main {
             }
             
             .profile_btn {
-                width: 50%;
+                width: 45%;
                 display: flex;
                 flex-direction: column;
 
@@ -110,7 +108,6 @@ main {
                     font-size: 15px;  
                     }
 
-                    
                     @media(max-width:850px) {
                         width: 80%;
                         font-size: 14px;
@@ -150,15 +147,14 @@ main {
                     &:hover {
                         border:  1px solid #0B3F37;
                     }
-                
+
                     img {
                         padding: 0px 10px;
                     }
 
                     @media(max-width:700px) {
                         width: 45%;
-                        margin: 10px;
-                            
+                        margin: 10px;                            
                     }
 
                     @media(max-width:600px) {
@@ -171,6 +167,7 @@ main {
             .foto_user {
                 display: flex;
                 margin-bottom: 20px;
+                width: 55%;
 
                 .foto {
                     padding-right: 20px;
@@ -241,7 +238,6 @@ main {
                             color:#A1A1A1;
                         }
 
-
                         img {
                             padding-right: 5px;
                         }
@@ -250,16 +246,6 @@ main {
             }
         }
     }
-}
-
-h3 {
-    font-family: "Mont";
-    font-size: 27px;
-    font-weight: 900;
-    line-height: 26px;
-    letter-spacing: 0em;
-    text-align: left;
-    margin-bottom: 20px;
 }
 
 .contact_information {
@@ -357,8 +343,7 @@ h3 {
             line-height: 17px;
             letter-spacing: 0em;
             text-align: center;
-            background: linear-gradient(270deg,#0B3F37,#CB8D62
-            );
+            background: linear-gradient(270deg,#0B3F37,#CB8D62);
 
             &:hover {
                 background: linear-gradient(270deg,#CB8D62,#0B3F37
@@ -410,74 +395,26 @@ h3 {
     }
     
     .num_card {
-        position: relative;
         width: 45%;
         height: 20%;
         margin-bottom: 10px;
         border: none;
         margin-right: 5px;
-
+        display: flex;
+        margin-bottom: 20px;
+  
         @media(max-width:1390px) {
-            width: 93%;
-            margin-bottom: 20px;
-        }
-        @media(max-width:13335px) {
-            width: 92%;
-            margin-bottom: 20px;
-        }
-        @media(max-width:1190px) {
-            width: 91%;
-            margin-bottom: 20px;
-        }
-
-        @media(max-width:980px) {
-            width: 90%;
-            margin-bottom: 20px;
-        }
-
-        @media(max-width:875px) {
-            width: 89%;
-            margin-bottom: 20px;
-        }
-
-        @media(max-width:800px) {
-            width: 88%;
-            margin-bottom: 20px;
-        }
-
-        @media(max-width:735px) {
-            width: 87%;
-            margin-bottom: 20px;
-        }
-
-        @media(max-width:700px) {
-            width: 92%;
-            margin-bottom: 20px;
-        }
-
-        @media(max-width:650px) {
-            width: 91%;
-            margin-bottom: 20px;
-        }
-
-        @media(max-width:650px) {
             width: 97%;
-            margin-bottom: 20px;
-        }
-
-        @media(max-width:500px) {
-            width: 94%;
-            margin-bottom: 20px;
+            margin-left: 0px;        
         }
 
         @media(max-width:445px) {
-            width: 95%;
-            margin-bottom: 20px;
+            width: 89%;
         }
         
-        
-
-       
+        @media(max-width:355px) {
+            width: 86%;
+        }
 
         .submit {
             position: absolute;
@@ -488,8 +425,8 @@ h3 {
         }
        
         input {
+            width: 88%;
             text-align: start;
-            width: 90%;
             height: 40px;
             padding-left: 32px;
             font-family: "Mont";
@@ -497,34 +434,18 @@ h3 {
             font-weight: 600;
             line-height: 17px;
             letter-spacing: 0em;   
-            
 
             @media(max-width:1390px) {
-                width: 97%;
-                margin-left: 0px;        
+                width: 93%;
+                margin-left: 0px;     
             }
-
-            @media(max-width:1390px) {
-                width: 91%;
-                margin-left: 0px;        
-            }
-   
-            
-        @media(max-width:445px) {
-            width: 89%;
-        }
-        @media(max-width:355px) {
-            width: 86%;
-        }
-   
    
         }
     }
 
-
     .date {
         position: relative;
-        width: 18%;
+        width: 25%;
         height: 45px;
         display: flex;
         justify-content: space-around;
@@ -538,7 +459,7 @@ h3 {
         }
 
         .oll {
-            width: 24%;
+            width: 80%;
             height: 89%;
             font-family: "Mont";
             font-size: 18px;
@@ -570,7 +491,7 @@ h3 {
 
 .cvv {
     position: relative;
-    width: 18%;
+    width: 25%;
     height: 45px;
     display: flex;
     justify-content: space-around;
@@ -582,7 +503,7 @@ h3 {
     }
 
     .oll {
-        width: 23%;
+        width: 80%;
         height: 89%;
         font-family: "Mont";
         font-size: 18px;

@@ -12,7 +12,7 @@ h2 {
   font-style: normal;
   font-weight: 400;
   font-size: 50px;
-  line-height: 74.9%;
+  line-height: 1;
   width: 100%;
 }
 @media (max-width: 1350px) {
@@ -38,12 +38,36 @@ h2 {
   }
 }
 
+h3 {
+  width: 60%;
+  margin-bottom: 0px;
+  font-family: "Mont";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 96.4%;
+}
+@media (max-width: 950px) {
+  h3 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 930px) {
+  h3 {
+    font-size: 14px;
+  }
+}
+
 .main_title a {
   font-family: "Mont";
   font-size: 14px;
   font-weight: 400;
   cursor: pointer;
   list-style-type: none;
+}
+
+section {
+  padding: 30px 0px;
 }
 
 .section_title_slider {
@@ -66,9 +90,10 @@ h2 {
     background-size: 150%;
   }
 }
-@media (max-width: 435px) {
+@media (max-width: 460px) {
   .section_title_slider {
     margin-top: 0px;
+    padding-top: 80px;
   }
 }
 .section_title_slider .wrapper_container {
@@ -87,11 +112,6 @@ h2 {
 @media (max-width: 700px) {
   .section_title_slider .wrapper_container .line {
     margin-bottom: 10px;
-  }
-}
-@media (max-width: 400px) {
-  .section_title_slider .wrapper_container {
-    padding-top: 20px;
   }
 }
 .section_title_slider .container {
@@ -123,21 +143,10 @@ h2 {
 }
 @media (max-width: 1350px) {
   .section_title_slider .hits {
-    width: 60%;
-    font-size: 30px;
+    width: 100%;
+    font-size: 40px;
     line-height: 100%;
     margin-bottom: 20px;
-  }
-}
-@media (max-width: 1100px) {
-  .section_title_slider .hits {
-    font-size: 25px;
-  }
-}
-@media (max-width: 670px) {
-  .section_title_slider .hits {
-    font-size: 18px;
-    width: 100%;
   }
 }
 @media (max-width: 520px) {
@@ -147,7 +156,7 @@ h2 {
 }
 @media (max-width: 472px) {
   .section_title_slider .hits {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 5px;
     margin-top: 0px;
   }
@@ -280,54 +289,9 @@ h2 {
   justify-content: center;
   align-items: center;
 }
-.container .btn_catalog {
-  position: relative;
-  z-index: 800;
-  width: 27%;
-  padding: 17px 47px;
-  background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
-  color: white;
-  font-family: "Mont";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 96.4%;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  cursor: pointer;
-  border: none;
-  display: flex;
-  justify-content: center;
-  border: 1px solid transparent;
-  transition: 0.3s;
-  border: 1px solid transparent;
-  box-sizing: border-box;
-  text-decoration: none;
-}
-.container .btn_catalog:hover {
-  box-shadow: 0px 0px 20px 0px grey;
-}
-@media (max-width: 1060px) {
-  .container .btn_catalog {
-    width: 50%;
-    font-size: 14px;
-    margin-top: 5px;
-    margin-bottom: 20px;
-  }
-}
-@media (max-width: 755px) {
-  .container .btn_catalog {
-    width: 50%;
-    margin-top: 10px;
-    font-size: 13px;
-  }
-}
-@media (max-width: 560px) {
-  .container .btn_catalog {
-    width: 60%;
-    margin-top: 8px;
-    font-size: 12px;
-    padding: 10px 33px;
+@media (max-width: 425px) {
+  .container {
+    width: 85%;
   }
 }
 
@@ -335,32 +299,18 @@ h2 {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 20px 0px;
 }
-.section_our_production .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 74%;
-  text-align: center;
-}
-@media (max-width: 660px) {
-  .section_our_production .container {
-    width: 85%;
-  }
-}
-.section_our_production .container .wrapper_production {
+.section_our_production .wrapper_production {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
-.section_our_production .container h2 {
+.section_our_production h2 {
   text-align: center;
 }
-.section_our_production .container .box_products {
+.section_our_production .box_products {
   position: relative;
   display: flex;
   width: 33.3%;
@@ -369,11 +319,11 @@ h2 {
   margin-bottom: 20px;
 }
 @media (max-width: 800px) {
-  .section_our_production .container .box_products {
+  .section_our_production .box_products {
     width: 50%;
   }
 }
-.section_our_production .container .box_products .product {
+.section_our_production .box_products .product {
   width: 91%;
   display: flex;
   flex-direction: column;
@@ -381,13 +331,13 @@ h2 {
   align-items: center;
   cursor: pointer;
 }
-.section_our_production .container .box_products .product:hover {
+.section_our_production .box_products .product:hover {
   box-shadow: 0px 0px 20px 1px grey;
 }
-.section_our_production .container .box_products .product img {
+.section_our_production .box_products .product img {
   width: 100%;
 }
-.section_our_production .container .box_products .product .name_product {
+.section_our_production .box_products .product .name_product {
   font-family: "Mont";
   font-size: 30px;
   font-weight: 600;
@@ -397,18 +347,18 @@ h2 {
   color: white;
 }
 @media (max-width: 1225px) {
-  .section_our_production .container .box_products .product .name_product {
+  .section_our_production .box_products .product .name_product {
     font-size: 25px;
     width: 90%;
   }
 }
 @media (max-width: 1035px) {
-  .section_our_production .container .box_products .product .name_product {
+  .section_our_production .box_products .product .name_product {
     font-size: 18px;
   }
 }
 @media (max-width: 450px) {
-  .section_our_production .container .box_products .product .name_product {
+  .section_our_production .box_products .product .name_product {
     font-size: 14px;
     line-height: 15px;
   }
@@ -433,7 +383,6 @@ h2 {
   background: rgb(204, 204, 204);
 }
 .section_best_selling h2 {
-  padding-top: 50px;
   text-align: center;
 }
 
@@ -442,7 +391,6 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 0px;
 }
 @media (max-width: 500px) {
   .section_new {
@@ -458,6 +406,7 @@ h2 {
   display: flex;
   flex-direction: column;
   min-width: 0;
+  margin-bottom: 20px;
 }
 
 .wrapper {
@@ -507,18 +456,9 @@ h2 {
   justify-content: space-between;
   align-items: flex-end;
 }
-.wrapper .card .price h3 {
-  width: 60%;
-  margin-bottom: 0px;
-  font-family: "Mont";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 96.4%;
-}
 .wrapper .card .price .price_product {
   display: flex;
-  width: 50%;
+  width: 40%;
   justify-content: end;
   font-family: "Mont";
   font-style: normal;
@@ -526,12 +466,12 @@ h2 {
   font-size: 30px;
   line-height: 96.4%;
 }
-@media (max-width: 950px) {
+@media (max-width: 1440px) {
   .wrapper .card .price .price_product {
-    font-size: 21px;
+    font-size: 20px;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   .wrapper .card .price .price_product {
     font-size: 14px;
   }
@@ -560,12 +500,6 @@ h2 {
   justify-content: center;
   background: url(/img/MaskGroup.svg) #0B3F37;
   background-size: cover;
-  padding: 30px 0px;
-}
-@media (max-width: 960px) {
-  .section_bonus {
-    padding: 0px;
-  }
 }
 .section_bonus .container {
   width: 74%;
@@ -586,7 +520,7 @@ h2 {
     margin: 0px;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 960px) {
   .section_bonus .container .wrappet_text {
     align-items: center;
   }
@@ -603,8 +537,9 @@ h2 {
     align-items: center;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 960px) {
   .section_bonus .container .wrappet_text .wrapper_bonus {
+    align-items: center;
     flex-direction: column;
   }
 }
@@ -626,6 +561,8 @@ h2 {
 @media (max-width: 960px) {
   .section_bonus .container .wrappet_text .bonus {
     font-size: 70px;
+    padding: 0px;
+    margin-bottom: 10px;
   }
 }
 @media (max-width: 800px) {
@@ -656,6 +593,7 @@ h2 {
   .section_bonus .container .wrappet_text .bonus_text {
     font-size: 25px;
     width: 60%;
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 960px) {
@@ -664,19 +602,10 @@ h2 {
     font-size: 20px;
   }
 }
-.section_bonus .container .wrappet_text .btn_catalog {
-  margin-bottom: 0px;
-}
-@media (max-width: 960px) {
-  .section_bonus .container .wrappet_text .btn_catalog {
-    margin-bottom: 10px;
-  }
-}
 
 .section_recommendation {
   display: flex;
   justify-content: center;
-  padding: 20px 0px;
 }
 .section_recommendation h2 {
   text-align: center;
@@ -688,7 +617,6 @@ h2 {
   justify-content: center;
   align-items: center;
   background: rgb(204, 204, 204);
-  padding: 20px 0px;
 }
 .section_sale h2 {
   text-align: center;
@@ -700,8 +628,7 @@ h2 {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 30px;
-  padding: 20px 0px;
+  margin: 0px;
 }
 .section_review h2 {
   text-align: center;
@@ -835,41 +762,28 @@ h2 {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 96.4%;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  line-height: 1;
   cursor: pointer;
   border: none;
   display: flex;
   justify-content: center;
   border: 1px solid transparent;
   transition: 0.3s;
-  border: 1px solid transparent;
   box-sizing: border-box;
   list-style-type: none;
 }
 .btn_catalog:hover {
   box-shadow: 0px 0px 20px 0px grey;
 }
-@media (max-width: 1060px) {
+@media (max-width: 1350px) {
   .btn_catalog {
     width: 50%;
-    font-size: 14px;
-    margin-top: 5px;
-    margin-bottom: 20px;
-  }
-}
-@media (max-width: 755px) {
-  .btn_catalog {
-    width: 50%;
-    margin-top: 10px;
     font-size: 13px;
   }
 }
-@media (max-width: 560px) {
+@media (max-width: 600px) {
   .btn_catalog {
-    width: 60%;
-    margin-top: 8px;
+    width: 80%;
     font-size: 12px;
     padding: 10px 33px;
   }
@@ -886,23 +800,13 @@ h1 {
 }
 @media (max-width: 1350px) {
   h1 {
-    font-size: 60px;
+    font-size: 80px;
     margin-bottom: 10px;
   }
 }
-@media (max-width: 1100px) {
-  h1 {
-    font-size: 50px;
-  }
-}
-@media (max-width: 600px) {
+@media (max-width: 670px) {
   h1 {
     font-size: 45px;
-  }
-}
-@media (max-width: 580px) {
-  h1 {
-    font-size: 30px;
   }
 }
 @media (max-width: 435px) {
@@ -912,9 +816,14 @@ h1 {
 }
 @media (max-width: 377px) {
   h1 {
-    padding-top: 40px;
     margin: 0px;
+    padding: 0px;
+    font-size: 30px;
   }
+}
+
+a {
+  text-decoration: none;
 }
 
 header {
@@ -1385,22 +1294,6 @@ footer .container .confidentiality .law {
     text-align: center;
   }
 }
-footer .container .confidentiality a {
-  font-family: "Mont";
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 19px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: white;
-  width: 33%;
-}
-@media (max-width: 1042px) {
-  footer .container .confidentiality a {
-    width: 100%;
-    text-align: center;
-  }
-}
 
 ul {
   padding: 0px;
@@ -1419,7 +1312,8 @@ ul li {
   letter-spacing: 0em;
   text-align: left;
 }
-ul li a {
+
+a {
   text-decoration: none;
   color: white;
   font-family: "Mont";
@@ -1429,8 +1323,14 @@ ul li a {
   border-bottom: 1px solid transparent;
   transition: 0.3s;
 }
-ul li a:hover {
+a:hover {
   border-bottom: 1px solid white;
+}
+@media (max-width: 1042px) {
+  a {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .social {
@@ -1488,13 +1388,13 @@ ul li a:hover {
 }
 @font-face {
   font-family: "Mont";
-  src: url(/fons/MontHeavy.ttf);
-  font-weight: 900;
+  src: url(/fons/MontBold.ttf);
+  font-weight: 800;
 }
 @font-face {
   font-family: "Mont";
-  src: url(/fons/MontBold.ttf);
-  font-weight: 800;
+  src: url(/fons/MontHeavy.ttf);
+  font-weight: 900;
 }
 main {
   width: 100%;
@@ -2655,27 +2555,7 @@ html {
   }
 }
 .main_card_product h2 {
-  font-family: "Lighthaus";
-  font-size: 50px;
-  font-weight: 400;
-}
-@media (max-width: 1250px) {
-  .main_card_product h2 {
-    width: 100%;
-    margin-top: 0px;
-    font-size: 35px;
-  }
-}
-@media (max-width: 960px) {
-  .main_card_product h2 {
-    font-size: 30px;
-  }
-}
-@media (max-width: 460px) {
-  .main_card_product h2 {
-    font-size: 25px;
-    margin-bottom: 5px;
-  }
+  margin-bottom: 10px;
 }
 
 .characteristics {
@@ -2756,6 +2636,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 20px;
 }
 .wrapper_by_product .delete {
   position: absolute;
@@ -2879,7 +2760,8 @@ html {
   }
 }
 .section_basket_product .wrapper_characteristics {
-  width: 100%;
+  width: 70%;
+  padding: 30px 5px;
 }
 @media (max-width: 1056px) {
   .section_basket_product .wrapper_characteristics {
@@ -2899,7 +2781,6 @@ html {
   width: 100%;
 }
 .section_basket_product .wrapper_characteristics .back_to_by {
-  margin-top: 30px;
   font-family: "Mont";
   font-size: 18px;
   font-weight: 800;
@@ -2926,19 +2807,16 @@ html {
 
 .wrapper_oll_product {
   position: relative;
-  width: 38%;
-  margin-left: 50px;
+  width: 30%;
   justify-content: center;
   display: flex;
   justify-content: center;
   background-color: white;
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.0509803922);
-  margin-bottom: 120px;
 }
 @media (max-width: 1164px) {
   .wrapper_oll_product {
     width: 45%;
-    margin-left: 20px;
   }
 }
 @media (max-width: 1056px) {
@@ -3307,13 +3185,16 @@ h2 {
   width: 100%;
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
-  margin-bottom: 30px;
 }
 .section_review .container {
-  width: 100%;
+  width: 74%;
   flex-direction: column;
+}
+@media (max-width: 960px) {
+  .section_review .container {
+    width: 80%;
+  }
 }
 .section_review .box_product {
   width: 100%;
@@ -3374,58 +3255,6 @@ h2 {
   display: flex;
 }
 
-.wrapper {
-  width: 33.3%;
-  display: flex;
-  justify-content: center;
-}
-.wrapper .card {
-  position: relative;
-  width: 91%;
-  cursor: pointer;
-}
-.wrapper .card .sale {
-  position: absolute;
-  top: 20px;
-  left: 0px;
-  width: 84px;
-  height: 36px;
-  background-color: #9B0000;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-.wrapper .card img {
-  width: 100%;
-}
-.wrapper .card .price {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-.wrapper .card .price h3 {
-  width: 60%;
-  margin-bottom: 0px;
-  font-family: "Mont";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 96.4%;
-}
-.wrapper .card .price .price_product {
-  display: flex;
-  width: 50%;
-  justify-content: end;
-  font-family: "Mont";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 30px;
-  line-height: 96.4%;
-}
-
 .heard {
   width: 50px;
   height: 63px;
@@ -3437,78 +3266,6 @@ h2 {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-}
-
-.wrapper {
-  width: 33.3%;
-  display: flex;
-  justify-content: center;
-}
-.wrapper .card {
-  position: relative;
-  width: 91%;
-  cursor: pointer;
-}
-.wrapper .card .sale {
-  position: absolute;
-  top: 20px;
-  left: 0px;
-  width: 84px;
-  height: 36px;
-  background-color: #9B0000;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-.wrapper .card img {
-  width: 100%;
-}
-.wrapper .card .price {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-.wrapper .card .price h3 {
-  width: 60%;
-  margin-bottom: 0px;
-  font-family: "Mont";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 96.4%;
-}
-@media (max-width: 950px) {
-  .wrapper .card .price h3 {
-    font-size: 16px;
-  }
-}
-@media (max-width: 930px) {
-  .wrapper .card .price h3 {
-    font-size: 14px;
-  }
-}
-.wrapper .card .price .price_product {
-  display: flex;
-  width: 50%;
-  justify-content: end;
-  font-family: "Mont";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 30px;
-  line-height: 96.4%;
-}
-@media (max-width: 950px) {
-  .wrapper .card .price .price_product {
-    font-size: 20px;
-  }
-}
-@media (max-width: 930px) {
-  .wrapper .card .price .price_product {
-    font-size: 15px;
-  }
 }
 
 .slick-track {
@@ -4118,7 +3875,7 @@ main .section_profile .container h2 {
   }
 }
 main .section_profile .container .profile_btn {
-  width: 50%;
+  width: 45%;
   display: flex;
   flex-direction: column;
 }
@@ -4218,6 +3975,7 @@ main .section_profile .container .profile_btn .exit img {
 main .section_profile .container .foto_user {
   display: flex;
   margin-bottom: 20px;
+  width: 55%;
 }
 main .section_profile .container .foto_user .foto {
   padding-right: 20px;
@@ -4290,16 +4048,6 @@ main .section_profile .container .foto_user .user_name .loading span {
 }
 main .section_profile .container .foto_user .user_name .loading img {
   padding-right: 5px;
-}
-
-h3 {
-  font-family: "Mont";
-  font-size: 27px;
-  font-weight: 900;
-  line-height: 26px;
-  letter-spacing: 0em;
-  text-align: left;
-  margin-bottom: 20px;
 }
 
 .contact_information {
@@ -4448,83 +4196,28 @@ h3 {
   }
 }
 .bank .num_card {
-  position: relative;
   width: 45%;
   height: 20%;
   margin-bottom: 10px;
   border: none;
   margin-right: 5px;
+  display: flex;
+  margin-bottom: 20px;
 }
 @media (max-width: 1390px) {
   .bank .num_card {
-    width: 93%;
-    margin-bottom: 20px;
-  }
-}
-@media (max-width: 13335px) {
-  .bank .num_card {
-    width: 92%;
-    margin-bottom: 20px;
-  }
-}
-@media (max-width: 1190px) {
-  .bank .num_card {
-    width: 91%;
-    margin-bottom: 20px;
-  }
-}
-@media (max-width: 980px) {
-  .bank .num_card {
-    width: 90%;
-    margin-bottom: 20px;
-  }
-}
-@media (max-width: 875px) {
-  .bank .num_card {
-    width: 89%;
-    margin-bottom: 20px;
-  }
-}
-@media (max-width: 800px) {
-  .bank .num_card {
-    width: 88%;
-    margin-bottom: 20px;
-  }
-}
-@media (max-width: 735px) {
-  .bank .num_card {
-    width: 87%;
-    margin-bottom: 20px;
-  }
-}
-@media (max-width: 700px) {
-  .bank .num_card {
-    width: 92%;
-    margin-bottom: 20px;
-  }
-}
-@media (max-width: 650px) {
-  .bank .num_card {
-    width: 91%;
-    margin-bottom: 20px;
-  }
-}
-@media (max-width: 650px) {
-  .bank .num_card {
     width: 97%;
-    margin-bottom: 20px;
-  }
-}
-@media (max-width: 500px) {
-  .bank .num_card {
-    width: 94%;
-    margin-bottom: 20px;
+    margin-left: 0px;
   }
 }
 @media (max-width: 445px) {
   .bank .num_card {
-    width: 95%;
-    margin-bottom: 20px;
+    width: 89%;
+  }
+}
+@media (max-width: 355px) {
+  .bank .num_card {
+    width: 86%;
   }
 }
 .bank .num_card .submit {
@@ -4535,8 +4228,8 @@ h3 {
   top: 15px;
 }
 .bank .num_card input {
+  width: 88%;
   text-align: start;
-  width: 90%;
   height: 40px;
   padding-left: 32px;
   font-family: "Mont";
@@ -4547,29 +4240,13 @@ h3 {
 }
 @media (max-width: 1390px) {
   .bank .num_card input {
-    width: 97%;
+    width: 93%;
     margin-left: 0px;
-  }
-}
-@media (max-width: 1390px) {
-  .bank .num_card input {
-    width: 91%;
-    margin-left: 0px;
-  }
-}
-@media (max-width: 445px) {
-  .bank .num_card input {
-    width: 89%;
-  }
-}
-@media (max-width: 355px) {
-  .bank .num_card input {
-    width: 86%;
   }
 }
 .bank .date {
   position: relative;
-  width: 18%;
+  width: 25%;
   height: 45px;
   display: flex;
   justify-content: space-around;
@@ -4584,7 +4261,7 @@ h3 {
   }
 }
 .bank .date .oll {
-  width: 24%;
+  width: 80%;
   height: 89%;
   font-family: "Mont";
   font-size: 18px;
@@ -4614,7 +4291,7 @@ h3 {
 
 .cvv {
   position: relative;
-  width: 18%;
+  width: 25%;
   height: 45px;
   display: flex;
   justify-content: space-around;
@@ -4627,7 +4304,7 @@ h3 {
   }
 }
 .cvv .oll {
-  width: 23%;
+  width: 80%;
   height: 89%;
   font-family: "Mont";
   font-size: 18px;
