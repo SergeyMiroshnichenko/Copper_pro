@@ -106,7 +106,7 @@ footer {
 
             a {
                 &:hover {
-                    
+
                     &:hover{
                         border-bottom: 1px solid transparent;
                     }
@@ -138,18 +138,13 @@ footer {
                     width: 80%;
                 }
 
-                
-               
-                
-
                 img {     
                     border-bottom: 1px solid transparent;
 
                     &:hover {
                         border-bottom: 1px solid white;   
                     }
-                }
-                
+                }     
             }
 
             .law {
@@ -187,8 +182,7 @@ ul {
         line-height: 17px;
         letter-spacing: 0em;
         text-align: left;
-        
-       
+
     }
 }
 

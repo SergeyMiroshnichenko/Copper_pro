@@ -85,9 +85,6 @@ had.forEach(function(like) {
     })
 })
 
-
-
-
 $(document).ready (function(){
     $('.box_product').slick({
      arrow:true,
