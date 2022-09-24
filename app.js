@@ -1,8 +1,9 @@
-const nav=document.querySelector('.nav');
-const like =document.querySelector(".like");
-const icon= document.querySelector('.wrapper_icon');
+const nav = document.querySelector('.nav');
+const like = document.querySelector(".like");
+const icon = document.querySelector('.wrapper_icon');
 
 $(function() {
+
     $('#nav-icon2').click(function(){
 
         $(this).toggleClass('open');
@@ -10,31 +11,33 @@ $(function() {
         like.classList.toggle('activ')
         icon.classList.toggle('change')
     });
+
 });
 
-const tabsBtn=document.querySelectorAll('.tabs_nav-btn');
-const tabItem=document.querySelectorAll(".tabs_item")
+const tabsBtn = document.querySelectorAll('.tabs_nav-btn');
+const tabItem = document.querySelectorAll(".tabs_item")
 
 tabsBtn.forEach(function(item){
 
- item.addEventListener("click",function(){
+    item.addEventListener("click",function(){
 
-    let currentBtn=item;
-    let tabId=currentBtn.getAttribute ("data-tab")
-    let currentTab=document.querySelector(tabId)
+        let currentBtn=item;
+        let tabId=currentBtn.getAttribute ("data-tab")
+        let currentTab=document.querySelector(tabId)
 
-    if (!currentBtn.classList.contains ("active")) { 
-        tabsBtn.forEach(function(item){
-            item.classList.remove('active')
-        });
-    
-        tabItem.forEach(function(item){
-            item.classList.remove('active')
-        });
-        currentBtn.classList.add('active');
-        currentTab.classList.add("active")
-    }
- })
+        if (!currentBtn.classList.contains ("active")) { 
+            tabsBtn.forEach(function(item){
+                item.classList.remove('active')
+            });
+        
+            tabItem.forEach(function(item){
+                item.classList.remove('active')
+            });
+            
+            currentBtn.classList.add('active');
+            currentTab.classList.add("active")
+        }
+    })
 })
 
 
@@ -47,6 +50,7 @@ document.addEventListener("scroll", function(){
            transparent = false;
            $('header').removeClass('changeColor');
        }
+
     } else {
 
        if( !transparent ) {
@@ -63,7 +67,8 @@ window.addEventListener("scroll", function(){
             transparent = false;
             $('header').removeClass('changeColor');
         }
-     } else {
+
+    } else {
         if( !transparent ) {
             transparent = true;
             $('header').addClass('changeColor');
@@ -71,11 +76,17 @@ window.addEventListener("scroll", function(){
     }
 });
 
-let had=document.querySelector('.heard');
+const had = document.querySelectorAll('.heard');
 
-had.addEventListener("click",function(){
-    had.classList.toggle('active')
+had.forEach(function(like) {
+    like.addEventListener("click", function(){
+        had.classList.toggle(had)
+        console.log("hello");
+    })
 })
+
+
+
 
 $(document).ready (function(){
     $('.box_product').slick({

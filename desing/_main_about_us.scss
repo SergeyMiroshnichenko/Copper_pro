@@ -812,15 +812,24 @@ html {
                 text-align: left;
                 white-space: nowrap;
                 box-sizing: border-box;
+
+               
               
-                &:hover {
-                    box-shadow: 0px 0px 20px 0px grey;
-                }
 
                     @media(max-width:600px) {
                         text-align: center;
                         width:100%;
                     } 
+
+                    span {
+                        padding: 0px 10px;
+                        
+                        &:hover {
+                            padding: 0px 10px;
+                            box-shadow: 0px 0px 20px 0px grey;
+                        }
+                    }
+                  
               
 
                 }
